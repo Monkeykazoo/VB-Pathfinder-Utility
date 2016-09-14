@@ -61,6 +61,12 @@ Public Class RegisterViewModel
     Public Property Email As String
 
     <Required>
+    <StringLength(100, ErrorMessage:="The {0} must be at least {2} characters long.", MinimumLength:=4)>
+    <DataType(DataType.Text)>
+    <Display(Name:="Username")>
+    Public Property Username As String
+
+    <Required>
     <StringLength(100, ErrorMessage:="The {0} must be at least {2} characters long.", MinimumLength:=6)>
     <DataType(DataType.Password)>
     <Display(Name:="Password")>
