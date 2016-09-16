@@ -141,7 +141,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -249,6 +248,7 @@
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Character\Index.vbhtml" />
     <Content Include="Views\Character\Create.vbhtml" />
+    <Content Include="Views\Home\Index.vbhtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -257,6 +257,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.vbproj">
+      <Project>{7B2B52F1-1FA7-498A-875F-C132C407E43F}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Models.vbproj">
       <Project>{fc621191-dbd6-41e0-8d9a-29b654ba1829}</Project>
       <Name>Models</Name>
